@@ -1,0 +1,27 @@
+{
+  "name": "qenrak",
+  "version": "1.0.0",
+  "description": "Qenrak — faceless AI/tech video essays. Clean Futurist motion system built on Remotion.",
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "dev": "remotion studio",
+    "studio": "remotion studio",
+    "render": "remotion render Episode out/episode.mp4",
+    "render:palettes": "remotion render PalettePreview out/palette-preview.mp4",
+    "render:scene": "remotion render SceneLab out/scene-lab.mp4",
+    "upgrade": "remotion upgrade",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@remotion/google-fonts": "4.0.272",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "remotion": "4.0.272"
+  },
+  "devDependencies": {
+    "@remotion/cli": "4.0.272",
+    "@types/react": "19.0.0",
+    "typescript": "5.5.4"
+  }
+}
