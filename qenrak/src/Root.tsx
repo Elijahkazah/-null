@@ -13,8 +13,11 @@ import {PalettePreview} from './scenes/PalettePreview';
 /**
  * Qenrak compositions.
  * - Episode        : the full assembled ~63s video
- * - Scene_*        : each scene solo, for tuning one at a time
+ * - Scene-*        : each scene solo, for tuning one at a time
  * - PalettePreview : all 4 palettes side-by-side to pick your channel look
+ *
+ * NOTE: Composition ids may only contain a-z, A-Z, 0-9 and hyphens (-).
+ * No underscores or spaces.
  */
 export const RemotionRoot: React.FC = () => {
   return (
@@ -28,12 +31,12 @@ export const RemotionRoot: React.FC = () => {
         height={HEIGHT}
       />
 
-      <Composition id="Scene_Open" component={SceneOpen} durationInFrames={sec(10)} fps={FPS} width={WIDTH} height={HEIGHT} />
-      <Composition id="Scene_Number" component={SceneNumber} durationInFrames={sec(11)} fps={FPS} width={WIDTH} height={HEIGHT} />
-      <Composition id="Scene_Shift" component={SceneShift} durationInFrames={sec(10)} fps={FPS} width={WIDTH} height={HEIGHT} />
-      <Composition id="Scene_Breakdown" component={SceneBreakdown} durationInFrames={sec(12)} fps={FPS} width={WIDTH} height={HEIGHT} />
-      <Composition id="Scene_Tension" component={SceneTension} durationInFrames={sec(10)} fps={FPS} width={WIDTH} height={HEIGHT} />
-      <Composition id="Scene_Close" component={SceneClose} durationInFrames={sec(10)} fps={FPS} width={WIDTH} height={HEIGHT} />
+      <Composition id="Scene-Open" component={SceneOpen} durationInFrames={sec(10)} fps={FPS} width={WIDTH} height={HEIGHT} />
+      <Composition id="Scene-Number" component={SceneNumber} durationInFrames={sec(11)} fps={FPS} width={WIDTH} height={HEIGHT} />
+      <Composition id="Scene-Shift" component={SceneShift} durationInFrames={sec(10)} fps={FPS} width={WIDTH} height={HEIGHT} />
+      <Composition id="Scene-Breakdown" component={SceneBreakdown} durationInFrames={sec(12)} fps={FPS} width={WIDTH} height={HEIGHT} />
+      <Composition id="Scene-Tension" component={SceneTension} durationInFrames={sec(10)} fps={FPS} width={WIDTH} height={HEIGHT} />
+      <Composition id="Scene-Close" component={SceneClose} durationInFrames={sec(10)} fps={FPS} width={WIDTH} height={HEIGHT} />
 
       <Composition
         id="PalettePreview"
